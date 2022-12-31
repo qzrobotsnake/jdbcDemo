@@ -43,18 +43,6 @@ public class jdbcDemo {
         return str;
     }
 
-    public static String to_original(String password) {
-        char[] chars = password.toCharArray();
-        StringBuilder stringbuilder = new StringBuilder();
-        for (char aChar : chars) {
-            int asciiCode = aChar;
-            asciiCode -= key;
-            char result = (char) asciiCode;
-            stringbuilder.append(result);
-        }
-        return stringbuilder.toString();
-    }
-
     public static String GetDriverMangerParameter(int id) {
         return open("C:\\Users\\snake\\jdbcDemo\\data\\password.txt")[id];
     }
