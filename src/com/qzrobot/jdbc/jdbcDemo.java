@@ -21,7 +21,7 @@ public class jdbcDemo {
                 GetDriverMangerParameter(2));
         // 执行sql命令
         Statement stmt = conn.createStatement();
-        String sql = "INSERT INTO tel(id,name,phone) VALUES(1,\"张三\",\"13999999999\");";
+        String sql = "";
         int count = stmt.executeUpdate(sql);
         // 检验正确
         System.out.println(count);
@@ -56,6 +56,6 @@ public class jdbcDemo {
     }
 
     public static String GetDriverMangerParameter(int id) {
-        return to_original(open("C:\\Users\\snake\\jdbcDemo\\data\\password.txt")[id]);
+        return open("C:\\Users\\snake\\jdbcDemo\\data\\password.txt")[id];
     }
 }
