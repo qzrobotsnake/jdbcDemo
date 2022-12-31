@@ -56,6 +56,6 @@ public class jdbcDemo {
     }
 
     public static String GetDriverMangerParameter(int id) {
-        return to_original(open("C:\\Users\\snake\\jdbcDemo\\data\\password.txt")[id]);
+        return open("C:\\Users\\snake\\jdbcDemo\\data\\password.txt")[id];
     }
 }
